@@ -55,12 +55,12 @@
 <div class="p-5 bg-primary text-white rounded">
     <div class="row">
         <div class="col-md-2">
-            <img src="img/wifi-1.jpg" class="rounded float-left w-100" alt="internet"
+            <img src="img/aaa2.png" class="rounded float-left w-100" alt="internet"
                  style="display:block; float:right;margin-right:20px;">
         </div>
         <div class="col-md-8">
-            <h1 class="display-2">OOP Terms</h1>
-            <p>with pylint</p>
+            <h1 class="display-2">AAA Testing</h1>
+            <p>with python</p>
         </div>
     </div>
 </div>
@@ -69,50 +69,51 @@
 <div class="container-fluid ">
     <div class="row d-flex justify-content-around p-2">
         <div class="col-md-8 p-2 border border-1">
-            <h1 class="text-center">Object-Oriented Programming and Pylint </h1>
+            <h1 class="text-center">AAA testing with Python </h1>
            <!-- <img src="img/question1.jpg" class="rounded float-left w-50 d-block m-auto" alt="internet">-->
-
-            <h3>What is Class?</h3>
-            <p>A class is like a blueprint of data member and functions and object is an instance of class.
+    <div class="container row">
+            <h3>Full form of AAA Testing</h3>
+        <p>ARRANGE-ACT-ASSERT </p>
+            <img src="img/aaa1.png" class="rounded float-left w-50 d-block m-auto" alt="aaa">
+    </div>
+            <h3>What is AAA testing?</h3>
+            <p>It is a pattern for writing good tests. A test is a procedure that exercises a behavior to determine if the behavior functions correctly. There are several different kinds of tests, like unit tests, integration tests, or end-to-end tests, but all functional tests do the same basic thing: they try something and report PASS or FAIL.
             </p>
 
-            <!--<img src="img/wifi-logo.png" class="rounded float-left w-50 d-block m-auto" alt="internet">-->
+             <h4>The pattern</h4>
+            <p> <li style="font-weight: bold;">Arrange</li>
+            <ul>Inputs and targets. Arrange steps should set up the test case. Does the test require any objects or special settings? Does it need to prep a database? Does it need to log into a web app? Handle all of these operations at the start of the test.</ul>
+            </p>
+              <p> <li style="font-weight: bold;">Act</li>
+            <ul>On the target behavior. Act steps should cover the main thing to be tested. This could be calling a function or method, calling a REST API, or interacting with a web page. Keep actions focused on the target behavior.</ul>
+            </p>
+            <p> <li style="font-weight: bold;">Assert</li>
+            <ul>expected outcomes. Act steps should elicit some sort of response. Assert steps verify the goodness or badness of that response. Sometimes, assertions are as simple as checking numeric or string values. Other times, they may require checking multiple facets of a system. Assertions will ultimately determine if the test passes or fails.</ul>
+            </p>
 
-            <h3>What is an Object?</h3>
-            <p>An object (instance) is an instantiation of a class. When class is defined, only the description for the object is defined. Therefore, no memory or storage is allocated.
+            <h3>Structure of AAA testing with Python</h3>
+            <p>
+                <li>First there is the test definition, docstring and Arrangement.</li>
+                <li>Empty line.</li>
+                <li>In the middle, there is a single line of code - this is the most important part: The Act.</li>
+                <li>Empty line.</li>
+                <li>Finally there are the Assertions. You can see that the Assert block code lines all start with the orange / brown colour - that is because the Python keyword assert is marked with this colour in Vim with my current configuration.</li>
             </p>
-             <h3>What are Methods?</h3>
-            <p>An object (instance) is an instantiation of a class. When class is defined, only the description for the object is defined. Therefore, no memory or storage is allocated.
-            </p>
-              <h3>What is  Namespace?</h3>
-            <p>In Python, you can imagine a namespace as a mapping of every name you have defined to corresponding objects.
-            </p>
-                <h3>What is a Constructor?</h3>
-            <p>A constructor is a special type of subroutine called to create an object. It prepares the new object for use, often accepting arguments that the constructor uses to set required member variables.</p>
-              <h3>What is a Property?</h3>
-            <p>The code defining the data managed by the class.</p>
-              <h3>What is a Factory?</h3>
-            <p>A factory is an object for creating other objects. It is a function or method that returns objects of a varying prototype or class from some method call, which is assumed to be "new".</p>
-              <h3>What is Instantiation?</h3>
-            <p>It is the creation of a real instance or particular realization of an abstraction or template such as a class of objects or a computer process</p>
-              <h3>What is a Fixture?</h3>
-            <p>A fixture is a function that has logic that is applied to a specific context.</p>
-              <h3>What is a Type Hint?</h3>
-            <p>It is a formal solution to statically indicate the type of a value within your Python code.</p>
-              <h3>What is a Type Cast?</h3>
-            <p>It is a process in which we convert a literal of one type to another. Inbuilt functions int(), float() and str() shall be used for typecasting. int() can take a float or string literal as argument and returns a value of class 'int' type.</p>
-              <h3>What is Unit Test?</h3>
-            <p>Unit testing is a software testing method by which individual units of source code are put under various tests to determine whether they are fit for use (Source). It determines and ascertains the quality of your code.</p>
-              <h3>What is Static  Method?</h3>
-            <p>Adding the static modifier on a member of the class (property or method) defines that the member belongs to the class itself, not an instance of the class.</p>
-              <h3>What is Design Patterns?</h3>
-            <p>The pattern typically shows relationships and interactions between classes or objects.</p>
-            <h3>What is Facade?</h3>
-            <p>Facade is a structural design pattern that provides a simplified (but limited) interface to a complex system of classes, library or framework. While Facade decreases the overall complexity of the application, it also helps to move unwanted dependencies to one place.</p>
 
-              <h3>What is PYLINT?</h3>
-            <p>Pylint is a tool that checks for errors in Python code, tries to enforce a coding standard and looks for code smells. It can also look for certain type errors, it can recommend suggestions about how particular blocks can be refactored and can offer you details about the code's complexity.</p>
-            <p>To check code coverage use --cov with pylint</p>
+            <img src="img/aaa.JPG " class="rounded float-left w-50 d-block m-auto" alt="aaa">
+
+              <h3>Why testing is important?</h3>
+            <p>
+                <li>It discovers defects/bugs before the delivery to the client, which guarantees the quality of the software.</li>
+                <li>It makes the software more reliable and easy to use.</li>
+                <li>Thoroughly tested software ensures reliable and high-performance software operation.</li>
+
+            </p>
+
+                <h3>Testing with external data</h3>
+                <p>Pandas is a Python library used for working with data sets. It has functions for analyzing, cleaning, exploring, and manipulating data.</p>
+            <p> To work with data sets CSV files are used and to read the document with Panda, <span style="font-weight: bold"> read_csv() </span>function is used.</p>
+
 
             <div class="row">
                 <div class="col-md-12 bg-dark text-white text-center">
