@@ -27,9 +27,9 @@
         <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+           <li class="nav-item">
           <a class="nav-link" href="wifi.html">WiFi</a>
         </li>
            <li class="nav-item">
@@ -42,13 +42,12 @@
           <a class="nav-link" href="oop_terms.html">OOP Terms</a>
         </li>
            <li class="nav-item">
-
           <a class="nav-link" href="aaa.html">AAA</a>
         </li>
            <li class="nav-item">
           <a class="nav-link" href="oops_principles.html">OOP Principles</a>
         </li>
-         <li class="nav-item">
+          <li class="nav-item">
           <a class="nav-link" href="article4.html">Article 4- SoC</a>
         </li>
             </ul>
@@ -59,12 +58,12 @@
 <div class="p-5 bg-primary text-white rounded">
     <div class="row">
         <div class="col-md-2">
-            <img src="img/virus.png" class="rounded float-left w-100" alt="internet"
+            <img src="img/soc.png" class="rounded float-left w-100" alt="soc"
                  style="display:block; float:right;margin-right:20px;">
         </div>
         <div class="col-md-8">
-            <h1 class="display-2">Computer Virus</h1>
-            <p>Vital Information Resources Under Siege</p>
+            <h1 class="display-2">Separation of Concerns</h1>
+
         </div>
     </div>
 </div>
@@ -73,56 +72,36 @@
 <div class="container-fluid ">
     <div class="row d-flex justify-content-around p-2">
         <div class="col-md-8 p-2 border border-1">
-            <h1 class="text-center">Virus</h1>
-            <img src="img/question1.jpg" class="rounded float-left w-50 d-block m-auto" alt="internet">
+            <h1 class="text-center">Separation of Concerns</h1>
+           <!-- <img src="img/question1.jpg" class="rounded float-left w-50 d-block m-auto" alt="internet">-->
 
-            <h2>What is Computer Virus?</h2>
-            <p>A computer virus is a type of malicious code or program written to alter the way a computer operates
-                and is designed to spread from one computer to another. A virus operates by inserting or attaching
-                itself to a legitimate program or document that supports macros in order to execute its code.</p>
-            <h2>How does the virus inserts? </h2>
-            <p>Routes of infection are through attached files, downloaded files from websites, external storage
-                media, etc. These days, a new type of virus has emerged which infects files when certain websites
-                are merely visited, so a digital environment without antivirus software is quite dangerous.</p>
-            <h2>How do computer virus attack?</h2>
-            <p>
-                Once a virus has successfully attached to a program, file, or document, the virus will lie dormant
-                until circumstances cause the computer or device to execute its code. In order for a virus to infect
-                your computer, you have to run the infected program, which in turn causes the virus code to be
-                executed.
-            </p>
-            <p>
-                This means that a virus can remain dormant on your computer, without showing major signs or
-                symptoms. However, once the virus infects your computer, the virus can infect other computers on the
-                same network. Stealing passwords or data, logging keystrokes, corrupting files, spamming your email
-                contacts, and even taking over your machine are just some of the devastating and irritating things a
-                virus can do.
-            </p>
-            <img src="img/virus1.jpg" class="rounded float-left w-50 d-block m-auto" alt="internet">
-            <h2>How do computer virus spread?</h2>
-            <p>Viruses can be spread through email and text message attachments, Internet file downloads, and social
-                media scam links. Your mobile devices and smartphones can become infected with mobile viruses
-                through shady app downloads. Viruses can hide disguised as attachments of socially shareable content
-                such as funny images, greeting cards, or audio and video files.</p>
+            <h3>What is it?</h3>
+              <p>It is a software architecture design pattern/principle for separating an application into distinct sections, so each section addresses a separate concern</p>
+            <p>The general idea is that one should avoid co-locating different concerns within the design or code.</p>
+            <p>At an architectural level, separation of concerns is a key component of building layered applications.</p>
+            <p> In a traditional N-tier application structure, layers might include data access, business logic, and user interface.</p>
+            <p>More modern N-tier application designs might include a core domain model and separate infrastructure modules in addition to one or more front end services and/or user interfaces.</p>
 
-            <h2>How to identify if your computer has virus?</h2>
-            <p>
-            <li>Frequent pop-up windows</li>
-            <li>Changes to your homepage</li>
-            <li>Mass emails being sent from your email account</li>
-            <li>Frequent crashes</li>
-            <li>Unusually slow computer performance</li>
-            <li>Unknown programs that start up when you turn on your computer</li>
-            <li>Unusual activities like password changes</li>
-            </p>
-            <img src="img/virus3.jpg" class="rounded float-left w-50 d-block m-auto" alt="internet">
-            <h2>How to protect against computer virus?</h2>
-            <p>
-            <li>Use an Anti-Virus software</li>
-            <li>Avoid clicking on any pop-up advertisements</li>
-            <li>Always scan your email attachments before opening them</li>
-            <li>Always scan the files that you download using file sharing programs</li>
-            </p>
+
+
+
+            <h3>Example used in Calculator</h3>
+            <p>By using the OOP principles and refactoring the code and creating reusable methods to use separation of concern pattern. </p>
+            <p>Here, we performed different operations like addition, division, subtraction, multiplication and stored the calculations to a history.</p>
+            <p>Everytime user performs the operation it gets appended to the history method </p>
+            <img src="img/soc2.JPG" class="rounded float-left w-50 d-block m-auto" alt="soc2">
+            <p>We can retrieve the last calculation from the history using the below method</p>
+            <img src="img/soc3.JPG" class="rounded float-left w-50 d-block m-auto" alt="soc3">
+
+            <h3>Another example used in Calculator</h3>
+            <p>Here, we have used the separate methods to define addition function and then another method to perform the operation</p>
+            <img src="img/soc4.JPG" class="rounded float-left w-50 d-block m-auto" alt="soc4">
+            <p>We can retrieve the last calculation from the history using the below method</p>
+            <img src="img/soc5.JPG" class="rounded float-left w-50 d-block m-auto" alt="soc5">
+            <p>At a lower level, the networking model used by the Internet is broken into a series of layers each with specific concerns and responsibilities, and demonstrates how separation of concerns can be effectively applied.</p>
+            <p>Applications may be written to allow functionality to be added or removed in a modular fashion, and many commercial products support this functionality as a means of separating features across product SKUs or to allow third parties to create plug-ins.</p>
+            <p>Separation of Concerns tends to be a natural consequence of following the Don't Repeat Yourself principle, since of necessity abstractions must be built to encapsulate concepts that would otherwise be repeated throughout the application.</p>
+
             <div class="row">
                 <div class="col-md-12 bg-dark text-white text-center">
                     <p class="display-6">"The dream behind the Web is of a common information space in which we
@@ -133,7 +112,7 @@
                 </div>
             </div>
 
-        </div>
+    </div>
         <div class="col-md-3 p-2 bg-light border border-1">
             <img src="img/girl2.jpg" class="rounded float-left w-100" alt="internet">
             <img src="img/thing.jpg" class="rounded float-left w-100" alt="internet">
@@ -231,24 +210,22 @@
                 </div>
             </div>
         </div>
+
     </div>
 
 
 
-    <div class="container-fluid ">
-        <div class="row">
-            <div class="col-md-12 text-center bg-light p-5">
-                <br><br>
-                <p>Copyright 2021 &copy; <a href="https://github.com/raj-p1/project-2">Page Designed By - Raj Patel</a></p>
+
+<div class="container-fluid ">
+  <div class="row">
+  <div class="col-md-12 text-center bg-light p-5">
+    <p>Copyright 2021 &copy; <a href="https://github.com/raj-p1/project-2">Page Designed By - Raj Patel</a></p>
        <a href="https://jigsaw.w3.org/css-validator/">w3c Validator Link</a>
-            </div>
-        </div>
-        <a href="https://jigsaw.w3.org/css-validator/">w3c Validator Link</a>
-    </div>
-
+  </div>
+ </div>
+</div>
 </div>
 
-</div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
